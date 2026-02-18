@@ -2,7 +2,7 @@ import numpy as np
 from constants import *
 
 def random_generation(tiles):
-    for tile in tiles:
+    for tile in tiles.values():
         k_neigh = np.random.randint(0, 5)
         
         # Choosing k neighbors randomly to the tile but this has a flaw as it is not keeping & maintaining the neighbors set book of neighbors

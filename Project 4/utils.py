@@ -49,7 +49,7 @@ class Maze:
         self.tiles = generate_maze(generation_mode)
         
     def draw(self, win):
-        for tile in self.tiles:
+        for tile in self.tiles.values():
             tile.draw(win)
 
 class Game:
@@ -97,8 +97,8 @@ class Game:
         pygame.quit()
 
 
-def generate_maze(mode) -> set[Tile] | list[Tile] | tuple[Tile]:
-    tiles = {Tile((i, j)) for i in range(n_rows) for j in range(n_cols)}
+def generate_maze(mode) -> dict[tuple[int, int], Tile]:
+    tiles = {(i, j): Tile((i, j)) for i in range(n_rows) for j in range(n_cols)}
 
     match mode.lower():
         case "random":
