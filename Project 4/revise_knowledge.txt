@@ -1,0 +1,24 @@
+# DFS
+
+$ start with a randomly selected tile
+start = random(tile from tiles)
+
+## DFS as Path Finding Algorithm the solver
+
+$ Make an stack with start as its element
+stack = [start]
+
+$ Loop steps
+    $ Pop the stack i.e. take last element of the stack
+    currentTile = pop(stack)
+
+    $ Add currentTile to visited set/list
+
+    $ If currentTile is goal return its path
+    if isGoal(currentTile) ret path2node(currentTile)
+
+    $ Else add every one of its unvisited children or neighbor to stack
+    for neigh in neighs(currentTile) if neigh not in visited append to stack
+
+## DFS as a Maze Generating Algorithm
+
