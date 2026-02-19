@@ -1,8 +1,5 @@
 # DFS
 
-$ start with a randomly selected tile
-start = random(tile from tiles)
-
 ## DFS as Path Finding Algorithm the solver
 
 $ Make an stack with start as its element
@@ -22,3 +19,23 @@ $ Loop steps
 
 ## DFS as a Maze Generating Algorithm
 
+$ start with a randomly selected tile
+start = random(tile from tiles)
+
+stack = [start]
+
+$ Loop starts
+
+    $ Pop the stack
+    currentTile = stack.open() $ fuga stack
+
+    $ Add currentTile into visited
+    currentTile -> visited
+
+    $ Adding new unvisited neighbors to the stack with updating neighbors( Here I was confused but I remembered our sync_neighbor function will work wonders for this so let's handle this later with that ok )
+
+    neigh <= neighbor : (currentTile) if new unvisited
+    sync at end or with a tweak in stack you will see soon 
+
+    $ Now for the main thing when to stop :- 
+    I think if tiles are visited then so a tile record set or maybe set difference between tiles values and our visited set kind of thing.
