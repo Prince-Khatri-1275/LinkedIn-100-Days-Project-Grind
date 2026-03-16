@@ -5,9 +5,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-csv_path = os.getenv("CSV_FILE")
-video_path = os.getenv("VIDEO_FILE")
-srt_path = os.getenv("SRT_FILE")
+csv_path = os.getenv("CSV_FILE_PATH")
+video_path = os.getenv("VIDEO_PATH")
+srt_path = os.getenv("SRT_FILE_PATH")
 
 duration = 0.8  # subtitle duration
 
