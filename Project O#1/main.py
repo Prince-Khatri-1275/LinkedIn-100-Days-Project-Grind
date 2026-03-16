@@ -7,7 +7,7 @@ load_dotenv()
 
 VIDEO_PATH:str = os.getenv("VIDEO_PATH", "")
 SCALE:float = float(os.getenv("SCALE", 1.0))
-OUTPUT_FILE:str = os.getenv("CSV_FILE", "")
+OUTPUT_FILE:str = os.getenv("CSV_FILE_PATH", "")
 
 cap = cv2.VideoCapture(VIDEO_PATH)
 
