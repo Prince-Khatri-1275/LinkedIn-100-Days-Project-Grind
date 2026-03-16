@@ -1,0 +1,14 @@
+pushup_counter_manual/
+│
+├── .env
+├── main.py
+├── requirements.txt
+│
+├── data/
+│   └── pushups.csv
+│
+├── videos/
+│   └── workout.mp4
+│
+└── output/
+    └── pushups.txt
